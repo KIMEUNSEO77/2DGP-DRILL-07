@@ -3,15 +3,18 @@ import random
 
 class Ball:
     def __init__(self):
-        self.x = random.randint(0, 800)
+        self.x = random.randint(50, 750)
         self.y = 599
         self.small_image = load_image('ball21x21.png')
         self.big_image = load_image('ball41x41.png')
         self.type = random.randint(0, 1)  # 0이면 작은 공, 1이면 큰 공
-        self.speed = random.randint(1, 7)
+        self.speed = random.randint(3, 10)
 
     def update(self):
-        self.y -= self.speed
+        if self.y - self.speed >= 58 and self.type == 0:
+            self.y -= self.speed
+        elif self.y - self.speed >= 67 and self.type == 1:
+            self.y -= self.speed
 
     def draw(self):
         if (self.type == 0):
