@@ -8,6 +8,7 @@ class Ball:
         self.small_image = load_image('ball21x21.png')
         self.big_image = load_image('ball41x41.png')
         self.type = random.randint(0, 1)  # 0이면 작은 공, 1이면 큰 공
+        self.speed = random.randint(1, 7)
 
     def update(self):
         pass
