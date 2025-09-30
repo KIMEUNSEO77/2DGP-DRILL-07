@@ -14,7 +14,10 @@ class Ball:
         self.y -= self.speed
 
     def draw(self):
-        pass
+        if (self.type == 0):
+            self.small_image.draw(self.x, self.y)
+        else:
+            self.big_image.draw(self.x, self.y)
 
 
 class Boy:
