@@ -8,6 +8,12 @@ class Ball:
         self.small_image = load_image('ball21x21.png')
         self.big_image = load_image('ball41x41.png')
 
+    def update(self):
+        pass
+
+    def draw(self):
+        pass
+
 
 class Boy:
     def __init__(self):
