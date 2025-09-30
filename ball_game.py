@@ -93,6 +93,10 @@ def reset_world():
     zombie = Zombie()
     world.append(zombie)
 
+    global balls
+    balls = [Ball() for _ in range(20)]
+    world += balls
+
 
 reset_world()
 
