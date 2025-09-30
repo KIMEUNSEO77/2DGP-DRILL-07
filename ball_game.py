@@ -123,6 +123,7 @@ def render_world():
 
 
 reset_world()  # 아무것도 없는 세상에 객체를 생성
+
 while running:
     handle_events()  # 사용자의 입력 처리
     update_world()  # 객체들의 상호작용을 시뮬레이션, 계산
