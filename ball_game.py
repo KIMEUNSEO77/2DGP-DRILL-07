@@ -1,6 +1,7 @@
 from pico2d import *
 import random
 
+#Drill #7 - 2023180012 김은서 제출
 class Ball:
     def __init__(self):
         self.x = random.randint(50, 750)
